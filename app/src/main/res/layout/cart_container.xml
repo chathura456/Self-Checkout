@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="8dp"
+    android:layout_marginHorizontal="20dp"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/milo"
+            android:id="@+id/eventImg"
+            android:layout_margin="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblName"
+                android:text="Nestle Milo Packet 180ml"
+                android:textSize="18sp"
+                android:paddingRight="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="4dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lblAssociation"
+                android:text="Rs.130"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                />
+
+            <TextView
+                android:id="@+id/lblclick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Qty : 1"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

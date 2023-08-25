@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Self Checkout</string>
+    <string name="title_activity_bottom_bar">BottomBar</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Profile</string>
+    <string name="title_notifications">Cart</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description">Nestle Milo is a rich and creamy chocolate-malt beverage known for its distinctive taste. Originating from Nestle, a renowned global brand, Milo has become a household name in many countries. The 180ml packet offers a pre-mixed, ready-to-drink version of this beloved drink. Packaged in a compact and easy-to-carry format, it\'s perfect for those who want a quick energy boost or a tasty treat on the move. The drink combines the flavors of chocolate and malt, providing a balanced taste that appeals to both children and adults. Its unique taste and energizing properties have made it a favorite choice for breakfast, after sports, or as a midday snack.</string>
+</resources>
