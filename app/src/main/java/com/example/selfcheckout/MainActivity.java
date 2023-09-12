@@ -45,13 +45,11 @@ public class MainActivity extends AppCompatActivity {
 
         TextInputEditText email = findViewById(R.id.loginEmail);
         TextInputEditText password = findViewById(R.id.loginPassword);
-        TextView textView = findViewById(R.id.textView16);
 
         loginBtn.setOnClickListener(v -> {
             // Retrieve email and password from the TextInputEditText views
             String userEmail = email.getText().toString().trim();
             String userPassword = password.getText().toString().trim();
-            textView.setText(userPassword);
 
             // Check if email and password are not empty
             if(!userEmail.isEmpty() && !userPassword.isEmpty()) {
@@ -78,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
                 RequestBody body = RequestBody.create(JSON, jsonInputString);
                 Request request = new Request.Builder()
-                        .url("https://8cfc-2402-d000-8100-706a-9c6f-540-4299-3949.ngrok-free.app/users/login")
+                        .url(Constants.BASE_URL+"/users/login")
                         .post(body)
                         .build();
 
@@ -103,44 +101,5 @@ public class MainActivity extends AppCompatActivity {
             }
         }).start();
     }
-
-
-
-
-    public void checkBackend() {
-        new Thread(() -> {
-            try {
-                URL url = new URL("https://8cfc-2402-d000-8100-706a-9c6f-540-4299-3949.ngrok-free.app/users/test");
-                HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
-                httpURLConnection.setRequestMethod("GET");
-                httpURLConnection.setRequestProperty("Accept", "application/json");
-
-                int responseCode = httpURLConnection.getResponseCode();
-                if(responseCode == HttpURLConnection.HTTP_OK) {
-                    // Read the response
-                    InputStream in = new BufferedInputStream(httpURLConnection.getInputStream());
-                    BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-                    StringBuilder result = new StringBuilder();
-                    String line;
-                    while ((line = reader.readLine()) != null) {
-                        result.append(line);
-                    }
-
-                    // Log the result
-                   // Toast.makeText(getApplicationContext(), "test Success", Toast.LENGTH_SHORT).show();
-                    Log.d("BackendCheck", "Response: Success" );
-                } else {
-                    //Toast.makeText(getApplicationContext(), "Test Success", Toast.LENGTH_SHORT).show();
-                    Log.d("BackendCheck", "Response: error" );
-                }
-
-            } catch (Exception e) {
-                e.printStackTrace();
-                Log.d("BackendCheck", "Response: "+e.toString() );
-            }
-        }).start();
-    }
-
-
 }
 

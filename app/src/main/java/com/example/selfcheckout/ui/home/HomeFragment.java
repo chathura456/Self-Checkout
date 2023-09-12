@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -31,6 +33,9 @@ public class HomeFragment extends Fragment {
 
         final CardView scannerBtn = binding.scannerBtn;
         NavigationUtils.setFragmentToActivityNavigationClickListener(scannerBtn, this, Scanner.class);
+
+        final ImageButton logout = binding.logoutButton;
+        NavigationUtils.setFragmentToActivityNavigationClickListener(logout, this, MainActivity.class);
 
        // final TextView textView = binding.textHome;
         //homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
