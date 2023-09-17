@@ -69,7 +69,7 @@ public class Register extends AppCompatActivity {
 
                 if (response.isSuccessful()) {
                     Log.d("BackendCheck", "Response: Registration Success");
-                    Intent intent = new Intent(getApplicationContext(), BottomBar.class);
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(intent);
 
                     // Display a toast message on the main thread

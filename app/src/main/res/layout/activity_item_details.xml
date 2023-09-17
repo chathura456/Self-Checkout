@@ -21,12 +21,14 @@
 
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
         android:paddingTop="5dp"
         android:text="Nestle Milo Packet 180ml"
         android:textSize="25dp"
+        android:textAlignment="textStart"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +38,7 @@
         app:layout_constraintVertical_bias="0.444" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="5dp"
@@ -51,21 +53,21 @@
         app:layout_constraintVertical_bias="0.517" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
-        android:justificationMode="inter_word"
-        android:text="@string/description"
+        android:text="test description"
         android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.583"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.762" />
+        app:layout_constraintVertical_bias="0.567" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="5dp"
@@ -77,7 +79,7 @@
         app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.926" />
+        app:layout_constraintVertical_bias="0.767" />
 
     <ImageButton
         android:id="@+id/searchButton2"
@@ -119,12 +121,13 @@
         app:layout_constraintHorizontal_bias="0.878"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.936" />
+        app:layout_constraintVertical_bias="0.774" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/img"
         android:layout_width="match_parent"
         android:layout_marginHorizontal="30dp"
+        android:elevation="3dp"
         android:layout_height="200dp"
         android:background="@color/greyLight"
         android:src="@drawable/milo"
